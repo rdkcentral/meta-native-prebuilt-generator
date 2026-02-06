@@ -119,7 +119,6 @@ protobuf-native \
 pseudo-native \
 python-native \
 python-lxml-native \
-python-native \
 python-setuptools-native \
 python3-asn1crypto-native \
 python3-certifi-native \
@@ -178,7 +177,6 @@ zlib-native \
 zstd-native \
 "
 DEPENDS += "\
-rust-native \ 
+rust-native \
 rust-llvm-native \
-cargo-native \
 "

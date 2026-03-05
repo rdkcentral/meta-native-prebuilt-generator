@@ -2,7 +2,7 @@ LICENSE = "MIT"
 
 PACKAGE_ARCH = "${OSS_LAYER_ARCH}"
 # Toolchain and native packages
-DEPENDS = "libgcc glibc-locale gcc-runtime gcc-sanitizers gdb-cross-${TARGET_ARCH}"
+DEPENDS = "libgcc glibc-locale gcc-runtime gcc-sanitizers gdb-cross-${TARGET_ARCH} binutils-cross-${TARGET_ARCH}"
 
 DEPENDS+= "\
 abseil-cpp-native \
@@ -179,4 +179,7 @@ zstd-native \
 DEPENDS += "\
 rust-native \
 rust-llvm-native \
+"
+DEPENDS += "\
+clang-native \
 "

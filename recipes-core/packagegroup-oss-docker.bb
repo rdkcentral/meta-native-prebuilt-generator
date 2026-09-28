@@ -2,7 +2,7 @@ LICENSE = "MIT"
 
 PACKAGE_ARCH = "${OSS_LAYER_ARCH}"
 # Toolchain and native packages
-DEPENDS = "libgcc gcc-runtime gcc-sanitizers glibc glibc-locale glibc-mtrace gdb-cross-${TARGET_ARCH} binutils-cross-${TARGET_ARCH}"
+DEPENDS = "libgcc gcc-runtime gcc-sanitizers gdb-cross-${TARGET_ARCH} binutils-cross-${TARGET_ARCH}"
 
 DEPENDS+= "\
 abseil-cpp-native \
@@ -21,6 +21,7 @@ bzip2-native \
 ca-certificates-native \
 c-ares-native \
 cargo-native \
+cargo-c-native \
 ccache-native \
 cdrtools-native \
 chrpath-native \
@@ -38,6 +39,7 @@ docbook-xml-dtd4-native \
 docbook-xsl-stylesheets-native \
 doxygen-native \
 dwarfsrcfiles-native \
+dwz-native \
 e2fsprogs-native \
 elfutils-native \
 erofs-utils-native \
